@@ -4,8 +4,8 @@
       <div class="my-5">
         <div class="text-h6"><b class="text-primary">Locally</b> defined variables</div>
         <code>
-          <div>const selectedCites = ref([])</div>
-          <div>const selectedCountries = ref([])</div>
+          <div>const selectedCountries = ref({{ selectedCountries }})</div>
+          <div>const selectedCites = ref({{ selectedCites }})</div>
         </code>
       </div>
 
