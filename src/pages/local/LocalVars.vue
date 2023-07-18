@@ -2,11 +2,13 @@
   <VContainer>
     <VCardText>
       <div class="my-5">
-        <div class="text-h6"><b class="text-yellow-darken-3">Pinia</b> store defined variables</div>
+        <div class="text-h6"><b class="text-primary">Locally</b> defined variables</div>
         <code>
-          <div>let { selectedCountries, selectedCites } = toRefs(useAppStore())</div>
+          <div>const selectedCites = ref([])</div>
+          <div>const selectedCountries = ref([])</div>
         </code>
       </div>
+
       <TitleSubtitle
         subtitle="Selecting countries narrows cities to only within those countries"
         title="Geographics"
@@ -56,12 +58,11 @@ import { useDebouncedRef } from '@U/methods'
 import allCountries from '@/@core/data/countries'
 
 const countryAutocompleteRef = ref()
+
+const selectedCites = ref([])
+const selectedCountries = ref([])
+
 const city = useDebouncedRef('', 400)
-
-// toRefs and reactive({ country: selectedCountries }) neeeded when using pinia stores.
-// looks very verbose, need some feedback here...
-
-let { selectedCountries, selectedCites } = toRefs(useAppStore())
 
 const { suggestions } = useGooglePlaces({
   apiKey: import.meta.env.VITE_GOOGLE_PLACES_API_KEY,

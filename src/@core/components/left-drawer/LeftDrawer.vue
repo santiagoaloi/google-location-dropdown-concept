@@ -34,8 +34,15 @@
         v-ripple="false"
         active-color="primary"
         prepend-icon="$mdiHomeOutline"
-        title="Locations"
+        title="Using Pinia"
         to="/"
+      />
+      <VListItem
+        v-ripple="false"
+        active-color="primary"
+        prepend-icon="$mdiHomeOutline"
+        title="Using local vars"
+        to="/localVars"
       />
     </VList>
   </VNavigationDrawer>
