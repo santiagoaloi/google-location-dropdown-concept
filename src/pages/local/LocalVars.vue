@@ -61,7 +61,6 @@ const countryAutocompleteRef = ref()
 
 const selectedCites = ref([])
 const selectedCountries = ref([])
-
 const city = useDebouncedRef('', 400)
 
 const { suggestions } = useGooglePlaces({
