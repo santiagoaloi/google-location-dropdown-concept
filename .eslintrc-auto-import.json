@@ -82,6 +82,7 @@
     "useCssVars": true,
     "useDebouncedRef": true,
     "useDisplay": true,
+    "useGooglePlaces": true,
     "useRoute": true,
     "useRouter": true,
     "useSlots": true,

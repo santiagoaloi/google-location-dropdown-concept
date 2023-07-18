@@ -34,16 +34,8 @@
         v-ripple="false"
         active-color="primary"
         prepend-icon="$mdiHomeOutline"
-        title="Dashboard"
+        title="Locations"
         to="/"
-      />
-      <VListItem
-        v-ripple="false"
-        active-color="primary"
-        prepend-icon="$mdiHomeOutline"
-        title="Playground"
-        to="/playground"
-        @click.stop
       />
     </VList>
   </VNavigationDrawer>
