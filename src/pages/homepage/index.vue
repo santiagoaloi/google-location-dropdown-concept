@@ -2,7 +2,11 @@
   <VContainer>
     <VCardText>
       <div class="my-5">
-        <div class="text-h6"><b class="text-yellow-darken-3">Pinia</b> store defined variables</div>
+        <div class="text-h6">
+          <b class="text-yellow-darken-3">Pinia</b> store defined variables
+          <VChip class="bg-teal" size="x-small">Persisted</VChip>
+        </div>
+
         <code>
           <div>let { selectedCountries, selectedCites } = toRefs(useAppStore())</div>
         </code>
